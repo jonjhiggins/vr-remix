@@ -537,7 +537,7 @@ Prefab:
         type: 2}
       propertyPath: scriptAliasRightController
       value: 
-      objectReference: {fileID: 1578776635}
+      objectReference: {fileID: 0}
     - target: {fileID: 114122964802687562, guid: a3fde6119f47045b68f0daae12b27f07,
         type: 2}
       propertyPath: _trackingOriginType
@@ -611,6 +611,10 @@ Prefab:
     - target: {fileID: 4434070617426300, guid: a3fde6119f47045b68f0daae12b27f07, type: 2}
       propertyPath: m_LocalPosition.y
       value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907903715822990, guid: a3fde6119f47045b68f0daae12b27f07, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3fde6119f47045b68f0daae12b27f07, type: 2}
@@ -948,9 +952,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548089219}
-  - component: {fileID: 1548089221}
   - component: {fileID: 1548089222}
   - component: {fileID: 1548089215}
+  - component: {fileID: 1548089216}
   m_Layer: 0
   m_Name: InkTrail
   m_TagString: Untagged
@@ -972,6 +976,18 @@ MonoBehaviour:
   target: {fileID: 434374589}
   speed: 5
   inkToControllerDistance: {x: -1, y: 0, z: 1}
+--- !u!114 &1548089216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548089214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257620865bbdb4454bd342b428369eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerEvents: {fileID: 0}
 --- !u!4 &1548089219
 Transform:
   m_ObjectHideFlags: 0
@@ -985,18 +1001,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1548089221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1548089214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9e25f6524b724051b376c278a7020c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerActive: 0
 --- !u!96 &1548089222
 TrailRenderer:
   serializedVersion: 2
@@ -1033,7 +1037,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: Infinity
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -1089,11 +1093,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!1 &1578776635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 112276, guid: d9809c5e8418bb047bf2c8ba1d1a2cec,
-    type: 2}
-  m_PrefabInternal: {fileID: 2097776584}
 --- !u!1 &1587343820
 GameObject:
   m_ObjectHideFlags: 0
