@@ -10,11 +10,16 @@ public class DrawInk : MonoBehaviour {
         ink.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update () {
-        ink.enabled = Input.GetKey(KeyCode.Space);
-        if (Input.GetKeyUp(KeyCode.Space)) {
-            ink.Clear();
-        } 
+    public void InkOn () 
+    {
+        ink.Clear();
+        ink.enabled = true;
+        Debug.Log("InkOn");
+    }
+
+    public void InkOff ()
+    {
+        ink.enabled = false;
+        Debug.Log("InkOff");
     }
 }
