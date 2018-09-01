@@ -3,14 +3,26 @@ using System.Collections;
 
 public class FollowTarget : MonoBehaviour
 {
-    //Target
     public Transform target;
     public float speed;
+    public Vector3 inkToControllerDistance;
     //public AnimationCurve curve;
+    
+    private void Awake()
+    {
+        // Set initial position in relation to controller
+        transform.position = GetControllerTransformed(target.position);
+    }
+
+    // Transform controller position 
+    private Vector3 GetControllerTransformed(Vector3 targetPosition) {
+        return inkToControllerDistance + targetPosition; 
+    }
 
     private void Update()
     {
-        //Lerp to controller
-        transform.position = Vector3.Lerp(transform.position, target.position, speed * Time.deltaTime);
+        Vector3 controllerTransformed = GetControllerTransformed(target.position);
+        // Lerp to controller (transformed)
+        transform.position = Vector3.Lerp(transform.position, controllerTransformed, speed * Time.deltaTime);
     }
 }
