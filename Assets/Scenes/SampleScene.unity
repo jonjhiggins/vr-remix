@@ -1110,6 +1110,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 467172408}
   m_CullTransparentMesh: 0
+--- !u!4 &487324547 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1964602097}
 --- !u!1 &524561955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,34 +1547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a139d83bf6796734db220df8a5bfacbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiffuseFallbacks: []
-  NormalFallbacks: []
-  TargetRenderer: {fileID: 0}
-  TextureArrays: []
-  TextureCopyManager: {fileID: 0}
-  BodyColorTints: []
-  LocalAvatarConfig:
-    ComponentMaterialProperties: []
-    MaterialPropertyBlock:
-      Colors: []
-      DiffuseIntensities: []
-      RimIntensities: []
-      BacklightIntensities: []
-      ReflectionIntensities: []
-  DefaultAvatarConfig:
-    ComponentMaterialProperties: []
-    MaterialPropertyBlock:
-      Colors: []
-      DiffuseIntensities: []
-      RimIntensities: []
-      BacklightIntensities: []
-      ReflectionIntensities: []
-  LocalAvatarMaterialPropertyBlock:
-    Colors: []
-    DiffuseIntensities: []
-    RimIntensities: []
-    BacklightIntensities: []
-    ReflectionIntensities: []
 --- !u!1 &604178702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,35 +2268,6 @@ MonoBehaviour:
   right: {fileID: 79474553}
   objects: []
   assignAllBeforeIdentified: 0
---- !u!1 &1078467147
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 2097776584}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1078467148}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1078467148
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 2097776584}
-  m_GameObject: {fileID: 1078467147}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1578776636}
-  m_Father: {fileID: 1272299575}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136906192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,7 +2942,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1078467148}
+  - {fileID: 487324547}
   m_Father: {fileID: 524561956}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3328,21 +3276,6 @@ GameObject:
   - component: {fileID: 1272299575}
   m_Layer: 0
   m_Name: RightHandAnchor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1478874161
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 2097776584}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1578776636}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3809,19 +3742,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1573281919}
   m_CullTransparentMesh: 0
---- !u!4 &1578776636
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 2097776584}
-  m_GameObject: {fileID: 1478874161}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1078467148}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587343820
 GameObject:
   m_ObjectHideFlags: 0
@@ -4261,6 +4181,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1964602097
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1272299575}
+    m_Modifications:
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1969402056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4774,52 +4736,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2066410872}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &2097776584
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1272299575}
-    m_Modifications:
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010178323718, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
-  m_IsPrefabAsset: 0
 --- !u!1 &2099316034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,34 +4880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a139d83bf6796734db220df8a5bfacbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiffuseFallbacks: []
-  NormalFallbacks: []
-  TargetRenderer: {fileID: 0}
-  TextureArrays: []
-  TextureCopyManager: {fileID: 0}
-  BodyColorTints: []
-  LocalAvatarConfig:
-    ComponentMaterialProperties: []
-    MaterialPropertyBlock:
-      Colors: []
-      DiffuseIntensities: []
-      RimIntensities: []
-      BacklightIntensities: []
-      ReflectionIntensities: []
-  DefaultAvatarConfig:
-    ComponentMaterialProperties: []
-    MaterialPropertyBlock:
-      Colors: []
-      DiffuseIntensities: []
-      RimIntensities: []
-      BacklightIntensities: []
-      ReflectionIntensities: []
-  LocalAvatarMaterialPropertyBlock:
-    Colors: []
-    DiffuseIntensities: []
-    RimIntensities: []
-    BacklightIntensities: []
-    ReflectionIntensities: []
 --- !u!1 &2132733607
 GameObject:
   m_ObjectHideFlags: 0
