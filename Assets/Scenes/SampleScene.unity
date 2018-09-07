@@ -1195,6 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac27124318cf8e84aa7350c2ac1cdb80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mode: 0
 --- !u!82 &535020142
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1301,6 +1302,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f3402a2ea5bff4880c0313515240cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Driver: {fileID: 0}
+  Base: {fileID: 0}
+  Body: {fileID: 0}
+  ControllerLeft: {fileID: 0}
+  ControllerRight: {fileID: 0}
+  HandLeft: {fileID: 0}
+  HandRight: {fileID: 0}
+  RecordPackets: 0
+  UseSDKPackets: 1
+  StartWithControllers: 0
+  FirstPersonLayer:
+    layerIndex: 0
+  ThirdPersonLayer:
+    layerIndex: 0
+  ShowFirstPerson: 1
+  ShowThirdPerson: 0
+  Capabilities: -1
+  SurfaceShader: {fileID: 0}
+  SurfaceShaderSelfOccluding: {fileID: 0}
+  SurfaceShaderPBS: {fileID: 0}
+  SurfaceShaderPBSV2: {fileID: 0}
+  oculusUserID: 0
+  CombineMeshes: 0
+  AssetsDoneLoading:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  LeftHandCustomPose: {fileID: 0}
+  RightHandCustomPose: {fileID: 0}
+  PacketSettings:
+    UpdateRate: 0.033333335
 --- !u!114 &535020144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1509,6 +1542,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a139d83bf6796734db220df8a5bfacbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiffuseFallbacks: []
+  NormalFallbacks: []
+  TargetRenderer: {fileID: 0}
+  TextureArrays: []
+  TextureCopyManager: {fileID: 0}
+  BodyColorTints: []
+  LocalAvatarConfig:
+    ComponentMaterialProperties: []
+    MaterialPropertyBlock:
+      Colors: []
+      DiffuseIntensities: []
+      RimIntensities: []
+      BacklightIntensities: []
+      ReflectionIntensities: []
+  DefaultAvatarConfig:
+    ComponentMaterialProperties: []
+    MaterialPropertyBlock:
+      Colors: []
+      DiffuseIntensities: []
+      RimIntensities: []
+      BacklightIntensities: []
+      ReflectionIntensities: []
+  LocalAvatarMaterialPropertyBlock:
+    Colors: []
+    DiffuseIntensities: []
+    RimIntensities: []
+    BacklightIntensities: []
+    ReflectionIntensities: []
 --- !u!1 &604178702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,8 +2151,8 @@ MonoBehaviour:
   actualHeadset: {fileID: 1344898746}
   actualLeftController: {fileID: 259056721}
   actualRightController: {fileID: 1476641369}
-  modelAliasLeftController: {fileID: 0}
-  modelAliasRightController: {fileID: 1078467147}
+  modelAliasLeftController: {fileID: 366952587}
+  modelAliasRightController: {fileID: 727765918}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
@@ -4811,6 +4872,7 @@ MonoBehaviour:
   useRotationTracking: 1
   useIPDInPositionTracking: 1
   resetTrackerOnLoad: 0
+  AllowRecenter: 1
 --- !u!114 &2099316037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4902,6 +4964,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a139d83bf6796734db220df8a5bfacbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiffuseFallbacks: []
+  NormalFallbacks: []
+  TargetRenderer: {fileID: 0}
+  TextureArrays: []
+  TextureCopyManager: {fileID: 0}
+  BodyColorTints: []
+  LocalAvatarConfig:
+    ComponentMaterialProperties: []
+    MaterialPropertyBlock:
+      Colors: []
+      DiffuseIntensities: []
+      RimIntensities: []
+      BacklightIntensities: []
+      ReflectionIntensities: []
+  DefaultAvatarConfig:
+    ComponentMaterialProperties: []
+    MaterialPropertyBlock:
+      Colors: []
+      DiffuseIntensities: []
+      RimIntensities: []
+      BacklightIntensities: []
+      ReflectionIntensities: []
+  LocalAvatarMaterialPropertyBlock:
+    Colors: []
+    DiffuseIntensities: []
+    RimIntensities: []
+    BacklightIntensities: []
+    ReflectionIntensities: []
 --- !u!1 &2132733607
 GameObject:
   m_ObjectHideFlags: 0
