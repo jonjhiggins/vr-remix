@@ -13,22 +13,21 @@ public class FollowTarget : MonoBehaviour
     private void Awake()
     {
         // Set initial position in relation to controller
-        transform.position = GetControllerTransformed(target.position);
+        transform.position = GetControllerTransformed(target);
     }
 
     // Transform controller position 
-    private Vector3 GetControllerTransformed(Vector3 targetPosition) {
-        string debugString = targetPosition.x.ToString("0.0") + ' ' + targetPosition.y.ToString("0.0") + ' ' + targetPosition.z.ToString("0.0");
+    private Vector3 GetControllerTransformed(Transform controllerTarget) {
+        Vector3 targetPosition = target.position;
+        target.localPosition = inkToControllerDistance;
+        string debugString = target.rotation.x.ToString("0.0") + ' ' + target.rotation.y.ToString("0.0") + ' ' + target.rotation.z.ToString("0.0");
         debugText.text = debugString;
-        // return inkToControllerDistance + targetPosition; 
-        Vector3 newPosition = new Vector3(targetPosition.x, targetPosition.y, 1.7f);
-        Debug.Log(targetPosition + " | " + newPosition);
-        return newPosition;
+        return targetPosition;
     }
 
     private void Update()
     {
-        Vector3 controllerTransformed = GetControllerTransformed(target.position);
+        Vector3 controllerTransformed = GetControllerTransformed(target);
         // Lerp to controller (transformed)
         transform.position = Vector3.Lerp(transform.position, controllerTransformed, speed * Time.deltaTime);
     }
