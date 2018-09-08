@@ -14,12 +14,10 @@ public class DrawInk : MonoBehaviour {
     {
         ink.Clear();
         ink.enabled = true;
-        Debug.Log("InkOn");
     }
 
     public void InkOff ()
     {
         ink.enabled = false;
-        Debug.Log("InkOff");
     }
 }
