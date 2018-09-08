@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class DrawInk : MonoBehaviour {
     private TrailRenderer ink;
+    public Camera screenshotCamera;
 
     void Awake () {
         // Start with ink disabled
@@ -18,6 +20,10 @@ public class DrawInk : MonoBehaviour {
 
     public void InkOff ()
     {
-        ink.enabled = false;
+        if (screenshotCamera) {
+            screenshotCamera.GetComponent<ScreenRecorder>().CaptureScreenshot();
+        }
+        // ink.enabled = false;
+
     }
 }

@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>4</LangVersion>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{F73DDC12-6B44-1108-9FBB-BF75BE8FF48B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -23,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_6;UNITY_2018_2;UNITY_2018;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;VRTK_DEFINE_OCULUS_UTILITIES_1_12_0_OR_NEWER;VRTK_DEFINE_SDK_OCULUS;VRTK_DEFINE_SDK_OCULUS_AVATAR;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_6;UNITY_2018_2;UNITY_2018;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;VRTK_DEFINE_OCULUS_UTILITIES_1_12_0_OR_NEWER;VRTK_DEFINE_SDK_OCULUS;VRTK_DEFINE_SDK_OCULUS_AVATAR;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -253,6 +252,7 @@
     <Compile Include="Assets\Scripts\DrawInk.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\MoveController.cs" />
+    <Compile Include="Assets\Scripts\ScreenRecorder.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -696,6 +696,262 @@
     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseDefines.cs" />
     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseHeadset.cs" />
     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseSystem.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleAssistant.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleCallback.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleConversation.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleCustomHeaders.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleDiscovery.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleGetToken.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleLanguageTranslatorV2.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleLanguageTranslatorV3.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleNaturalLanguageClassifier.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleNaturalLanguageUnderstanding.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExamplePersonalityInsights.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleSpeechToText.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleStreaming.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleStreamingSplitSamples.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleTextToSpeech.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleToneAnalyzer.cs" />
+    <Compile Include="Assets\watson\Examples\ServiceExamples\Scripts\ExampleVisualRecognition.cs" />
+    <Compile Include="Assets\watson\Scripts\Connection\RESTConnector.cs" />
+    <Compile Include="Assets\watson\Scripts\Connection\WSConnector.cs" />
+    <Compile Include="Assets\watson\Scripts\Debug\DebugReactor.cs" />
+    <Compile Include="Assets\watson\Scripts\Logging\FileReactor.cs" />
+    <Compile Include="Assets\watson\Scripts\Logging\ILogReactor.cs" />
+    <Compile Include="Assets\watson\Scripts\Logging\Logger.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Assistant.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\IAssistant.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CaptureGroup.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Context.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Counterexample.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CounterexampleCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateCounterexample.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateDialogNode.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateEntity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateExample.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateIntent.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateSynonym.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateValue.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\CreateWorkspace.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNode.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeAction.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeNextStep.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeOutput.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeOutputGeneric.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeOutputModifiers.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeOutputOptionsElement.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeOutputOptionsElementValue.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeOutputTextValuesElement.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogNodeVisitedDetails.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogRuntimeResponseGeneric.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogRuntimeResponseTypeOption.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogRuntimeResponseTypeSuggestion.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogSuggestion.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\DialogSuggestionValue.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Entity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\EntityCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\EntityExport.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\EntityMention.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\EntityMentionCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Example.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\ExampleCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\InputData.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Intent.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\IntentCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\IntentExport.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\LogCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\LogExport.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\LogMessage.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\LogPagination.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Mentions.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\MessageInput.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\MessageRequest.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\MessageResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\OutputData.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Pagination.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\RuntimeEntity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\RuntimeIntent.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Synonym.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\SynonymCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\SystemResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateCounterexample.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateDialogNode.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateEntity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateExample.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateIntent.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateSynonym.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateValue.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\UpdateWorkspace.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Value.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\ValueCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\ValueExport.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\Workspace.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\WorkspaceCollection.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\WorkspaceExport.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\WorkspaceSystemSettings.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\WorkspaceSystemSettingsDisambiguation.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Assistant\v1\Model\WorkspaceSystemSettingsTooling.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Conversation\v1\Conversation.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Conversation\v1\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Discovery.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\CreateEventObject.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\CreateEventResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\EventData.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\Expansion.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\Expansions.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\LogQueryResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\LogQueryResponseResult.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\LogQueryResponseResultDocuments.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\LogQueryResponseResultDocumentsResult.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\MetricAggregation.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\MetricAggregationResult.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\MetricResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\MetricTokenAggregation.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\MetricTokenAggregationResult.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\MetricTokenResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEntities.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesContext.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesEntity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEntitiesResponseItem.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEvidence.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryEvidenceEntity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryFilterType.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryNoticesResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryNoticesResult.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryPassages.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryRelations.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryRelationsArgument.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryRelationsEntity.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryRelationsFilter.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryRelationsRelationship.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryRelationsResponse.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\Discovery\v1\Models\QueryResultMetadata.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\IWatsonService.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\LanguageTranslator\v2\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\LanguageTranslator\v2\LanguageTranslator.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\LanguageTranslator\v3\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\LanguageTranslator\v3\LanguageTranslator.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\NaturalLanguageClassifier\v2\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\NaturalLanguageClassifier\v2\NaturalLanguageClassifier.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\NaturalLanguageUnderstanding\v1\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\NaturalLanguageUnderstanding\v1\NaturalLanguageUnderstanding.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\PersonalityInsights\v3\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\PersonalityInsights\v3\PersonalityInsights.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\SpeechToText\v1\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\SpeechToText\v1\SpeechToText.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\TextToSpeech\v1\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\TextToSpeech\v1\TextToSpeech.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\DocumentAnalysis.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\SentenceAnalysis.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneAnalysis.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneCategory.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneChatInput.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneChatScore.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneInput.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\ToneScore.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\Utterance.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\UtteranceAnalyses.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\Model\UtteranceAnalysis.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\ToneAnalyzer\v3\ToneAnalyzer.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\VisualRecognition\v3\DataModels.cs" />
+    <Compile Include="Assets\watson\Scripts\Services\VisualRecognition\v3\VisualRecognition.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestAssistantCF.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestAssistantRC.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestConversation.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestDiscovery.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestEventManager.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestLanguageTranslatorV2.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestLanguageTranslatorV3CF.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestLanguageTranslatorV3RC.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestLanguageTranslatorV3RCApikeyAsBasicauth.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestNaturalLanguageClassifier.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestNaturalLanguageUnderstanding.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestPersonalityInsights.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestRunnable.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestSpeechToText.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestTextToSpeech.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestToneAnalyzer.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestVisualRecognitionCF.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\TestVisualRecognitionRC.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\UnitTest.cs" />
+    <Compile Include="Assets\watson\Scripts\UnitTests\UnitTestManager.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\AudioClipUtil.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\Constants.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\Credentials.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\EventManager.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\FrameRateCounter.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\KeyEventManager.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\NestedPrefabs.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\Runnable.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\SerializedDelegate.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\Singleton.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\TimedDestroy.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\UnityObjectUtil.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\Utility.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\WatsonException.cs" />
+    <Compile Include="Assets\watson\Scripts\Utilities\WaveFile.cs" />
+    <Compile Include="Assets\watson\Scripts\Widgets\DataTypes.cs" />
+    <Compile Include="Assets\watson\Scripts\Widgets\Widget.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Aot\fsAotCompilationManager.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Aot\fsAotConfiguration.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Aot\fsAotVersionInfo.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Aot\fsIAotConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsArrayConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsDateConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsDictionaryConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsEnumConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsForwardConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsGuidConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsIEnumerableConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsKeyValuePairConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsNullableConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsPrimitiveConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsReflectedConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsTypeConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\fsWeakReferenceConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\Bounds_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\Gradient_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\GUIStyle_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\Keyframe_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\LayerMask_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\Rect_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\RectOffset_DirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Converters\Unity\UnityEvent_Converter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsBaseConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsConfig.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsContext.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsConverterRegistrar.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsData.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsDirectConverter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsExceptions.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsIgnoreAttribute.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsISerializationCallbacks.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsJsonParser.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsJsonPrinter.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsMemberSerialization.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsObjectAttribute.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsObjectProcessor.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsPropertyAttribute.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsResult.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\fsSerializer.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Internal\fsCyclicReferenceManager.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Internal\fsOption.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Internal\fsPortableReflection.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Internal\fsTypeExtensions.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Internal\fsVersionedType.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Internal\fsVersionManager.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Reflection\fsMetaProperty.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Reflection\fsMetaType.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Reflection\fsReflectionUtility.cs" />
+    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Reflection\fsTypeCache.cs" />
+    <Compile Include="Assets\watson\ThirdParty\MiniJSON\MiniJSON.cs" />
+    <Compile Include="Assets\watson\Travis\TravisIntegrationTests.cs" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
@@ -715,6 +971,7 @@
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRCameraFrameLit.shader" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBSV2.shader" />
+    <None Include="Assets\watson\Examples\ServiceExamples\TestData\theJabberwocky-utf8.txt" />
     <None Include="Assets\Oculus\VR\Resources\Underlay Transparent Occluder.shader" />
     <None Include="Assets\Oculus\VR\Resources\Texture2D Blit.shader" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
@@ -725,6 +982,7 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
+    <None Include="Assets\watson\NOTICES.txt" />
     <None Include="Assets\SteamVR\readme.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
@@ -940,6 +1198,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>/Users/jonhiggins/Sites/vr-remix/Assets/watson/Plugins/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Users/jonhiggins/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -947,31 +1208,349 @@
       <HintPath>/Users/jonhiggins/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
