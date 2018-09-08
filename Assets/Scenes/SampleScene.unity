@@ -3605,7 +3605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1199363881}
   speed: 5
-  inkToControllerDistance: {x: 0, y: 0, z: 0}
+  inkToControllerDistance: {x: 0, y: 0, z: 4}
   debugText: {fileID: 295407569}
 --- !u!114 &1548089216
 MonoBehaviour:
