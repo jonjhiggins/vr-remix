@@ -43,17 +43,18 @@ public class ScreenRecorder : MonoBehaviour
         // if folder not specified by now use a good default
         if (folder == null || folder.Length == 0)
         {
-            folder = Application.dataPath;
+            folder = Application.persistentDataPath;
             if (Application.isEditor)
             {
                 // put screenshots in folder above asset path so unity doesn't index the files
                 var stringPath = folder + "/..";
                 folder = Path.GetFullPath(stringPath);
             }
-            folder += "/screenshots";
+            folder += "/files";
 
             // make sure directoroy exists
-            System.IO.Directory.CreateDirectory(folder);
+            // @TODO add check to see if dir exists
+            // System.IO.Directory.CreateDirectory(folder);
 
             // count number of files of specified format in folder
             string mask = string.Format("screen_{0}x{1}*.{2}", width, height, format.ToString().ToLower());
