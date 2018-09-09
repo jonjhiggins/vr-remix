@@ -99,8 +99,6 @@
     <Compile Include="Assets\watson\ThirdParty\FullSerializer\Aot\Editor\fsAotConfigurationEditor.cs" />
     <Compile Include="Assets\watson\ThirdParty\FullSerializer\Editor\AotHelpers.cs" />
     <None Include="Assets\Oculus\VR\Editor\AndroidManifest.OVRSubmission.xml" />
-    <None Include="Assets\watson\Scripts\Editor\Help\Working\SHFBContent.xml" />
-    <None Include="Assets\watson\Scripts\Editor\Help\Working\StopWordList.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jonhiggins/Sites/vr-remix/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

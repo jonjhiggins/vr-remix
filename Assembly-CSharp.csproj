@@ -967,11 +967,11 @@
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlit.shader" />
+    <None Include="Assets\watson\NOTICES.txt" />
     <None Include="Assets\Oculus\VR\Shaders\Unlit Crosshair.shader" />
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRCameraFrameLit.shader" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBSV2.shader" />
-    <None Include="Assets\watson\Examples\ServiceExamples\TestData\theJabberwocky-utf8.txt" />
     <None Include="Assets\Oculus\VR\Resources\Underlay Transparent Occluder.shader" />
     <None Include="Assets\Oculus\VR\Resources\Texture2D Blit.shader" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
@@ -980,9 +980,9 @@
     <None Include="Assets\OvrAvatar\Samples\SocialStarter\README.txt" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRClipPlane.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+    <None Include="Assets\watson\Examples\ServiceExamples\TestData\theJabberwocky-utf8.txt" />
     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
-    <None Include="Assets\watson\NOTICES.txt" />
     <None Include="Assets\SteamVR\readme.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />

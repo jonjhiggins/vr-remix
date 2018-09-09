@@ -8,4 +8,8 @@
 /[Bb]uilds/
 /[Aa]ssets/[Ll]ocal
 
+# Visual Studio cache directory
+.vs/
+
 *.apk
+/screenshots
