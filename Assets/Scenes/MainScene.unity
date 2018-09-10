@@ -3618,7 +3618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257620865bbdb4454bd342b428369eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenshotCamera: {fileID: 1727408865}
+  gestureOnScreenPrefab: {fileID: 400000, guid: 971129baafd304455a111daa5207b8a1,
+    type: 2}
+  debugText: {fileID: 295407569}
 --- !u!4 &1548089219
 Transform:
   m_ObjectHideFlags: 0
@@ -4172,7 +4174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1817741215
 MonoBehaviour:
   m_ObjectHideFlags: 0

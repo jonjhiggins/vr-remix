@@ -20,8 +20,8 @@ public class FollowTarget : MonoBehaviour
     private Vector3 GetControllerTransformed(Transform controllerTarget) {
         Vector3 targetPosition = target.position;
         target.localPosition = inkToControllerDistance;
-        string debugString = target.rotation.x.ToString("0.0") + ' ' + target.rotation.y.ToString("0.0") + ' ' + target.rotation.z.ToString("0.0");
-        debugText.text = debugString;
+        //string debugString = target.rotation.x.ToString("0.0") + ' ' + target.rotation.y.ToString("0.0") + ' ' + target.rotation.z.ToString("0.0");
+        //debugText.text = debugString;
         return targetPosition;
     }
 
