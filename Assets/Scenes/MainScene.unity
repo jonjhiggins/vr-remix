@@ -3621,6 +3621,8 @@ MonoBehaviour:
   gestureOnScreenPrefab: {fileID: 400000, guid: 971129baafd304455a111daa5207b8a1,
     type: 2}
   debugText: {fileID: 295407569}
+  trainGestures: 1
+  newGestureName: circle
 --- !u!4 &1548089219
 Transform:
   m_ObjectHideFlags: 0

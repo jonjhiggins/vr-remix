@@ -15,13 +15,16 @@ public class DrawInk : MonoBehaviour {
     public Transform gestureOnScreenPrefab;
     public Text debugText;
 
+    public bool trainGestures = true;
+    public string newGestureName;
+
     private void Start()
     {
-        //Load pre-made gestures
-        TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/10-stylus-MEDIUM/");
-        foreach (TextAsset gestureXml in gesturesXml)
-            trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
-        //Load user custom gestures
+        // Load pre-made gestures
+        //TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/10-stylus-MEDIUM/");
+        //foreach (TextAsset gestureXml in gesturesXml)
+            //trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
+        // Load user custom gestures
         string[] filePaths = Directory.GetFiles(Application.persistentDataPath, "*.xml");
         foreach (string filePath in filePaths)
             trainingSet.Add(GestureIO.ReadGestureFromFile(filePath));
@@ -42,14 +45,20 @@ public class DrawInk : MonoBehaviour {
 
     public void InkOff ()
     {
-        Recognise();
+
+        if (trainGestures) {
+            StoreGesture();
+        } else {
+            RecogniseGesture();
+        }
+
         points.Clear();
         ink.enabled = false;
         ink.Clear();
 
     }
 
-    void Recognise () 
+    void BuildPointsArray()
     {
         // Get positions from ink trail renderer
         Vector3[] trailRecorded = new Vector3[ink.positionCount];
@@ -60,7 +69,24 @@ public class DrawInk : MonoBehaviour {
         {
             points.Add(new Point(trail.x, -trail.y, 0));
         }
+    }
 
+
+    void StoreGesture() 
+    {
+        BuildPointsArray();
+        string fileName = String.Format("{0}/{1}-{2}.xml", Application.persistentDataPath, newGestureName, DateTime.Now.ToFileTime());
+
+        GestureIO.WriteGesture(points.ToArray(), newGestureName, fileName);
+        Debug.Log(fileName);
+        trainingSet.Add(new Gesture(points.ToArray(), newGestureName));
+    }
+
+
+    void RecogniseGesture() 
+    {
+
+        BuildPointsArray();
         // Create PDollar gesture and classify against existing gestures
         Gesture candidate = new Gesture(points.ToArray());
         Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
