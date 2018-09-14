@@ -21,13 +21,13 @@ public class DrawInk : MonoBehaviour {
     private void Start()
     {
         // Load pre-made gestures
-        //TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/10-stylus-MEDIUM/");
-        //foreach (TextAsset gestureXml in gesturesXml)
-            //trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
+        TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/vr-remix-gestures/");
+        foreach (TextAsset gestureXml in gesturesXml)
+            trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
         // Load user custom gestures
-        string[] filePaths = Directory.GetFiles(Application.persistentDataPath, "*.xml");
-        foreach (string filePath in filePaths)
-            trainingSet.Add(GestureIO.ReadGestureFromFile(filePath));
+        //string[] filePaths = Directory.GetFiles(Application.persistentDataPath, "*.xml");
+        //foreach (string filePath in filePaths)
+            //trainingSet.Add(GestureIO.ReadGestureFromFile(filePath));
     }
 
 
