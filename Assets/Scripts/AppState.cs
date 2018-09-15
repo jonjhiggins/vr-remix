@@ -15,6 +15,13 @@ public class AppState : MonoBehaviour {
     public AudioSource squareAudioTrack;
     public AudioSource circleAudioTrack;
 
+    public Image triangleImage;
+    public Image squareImage;
+    public Image circleImage;
+
+    Color inactiveColour = new Color(255, 255, 255, 0.5f);
+    Color activeColour = new Color(255, 255, 255, 1);
+
     public void ToggleState(string shape)
     {
         // Set state
@@ -38,9 +45,7 @@ public class AppState : MonoBehaviour {
 
     private void Start()
     {
-        triangleAudioTrack.volume = 0;
-        squareAudioTrack.volume = 0;
-        circleAudioTrack.volume = 0;
+        StateChanged();
     }
 
     // @TODO replace with broadcasting an event
@@ -49,5 +54,9 @@ public class AppState : MonoBehaviour {
         triangleAudioTrack.volume = triangle ? 1 : 0;
         squareAudioTrack.volume = square ? 1 : 0;
         circleAudioTrack.volume = circle ? 1 : 0;
+
+        triangleImage.color = triangle ? activeColour : inactiveColour;
+        squareImage.color = square ? activeColour : inactiveColour;
+        circleImage.color = circle ? activeColour : inactiveColour;
     }
 }
