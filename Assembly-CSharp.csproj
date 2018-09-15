@@ -256,6 +256,7 @@
     <Compile Include="Assets\PDollar\Scripts\PDollarGestureRecognizer\Point.cs" />
     <Compile Include="Assets\PDollar\Scripts\PDollarGestureRecognizer\PointCloudRecognizer.cs" />
     <Compile Include="Assets\PDollar\Scripts\PDollarGestureRecognizer\Result.cs" />
+    <Compile Include="Assets\Scripts\AppState.cs" />
     <Compile Include="Assets\Scripts\DrawInk.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\MoveController.cs" />

@@ -18,6 +18,11 @@ public class DrawInk : MonoBehaviour {
     public bool trainGestures = true;
     public string newGestureName;
 
+    public AppState appState;
+
+    public delegate int PerformCalculation(int x, int y);
+
+
     private void Start()
     {
         // Load pre-made gestures
@@ -46,11 +51,15 @@ public class DrawInk : MonoBehaviour {
     public void InkOff ()
     {
 
+
         if (trainGestures) {
             StoreGesture();
         } else {
-            RecogniseGesture();
+            string gesture = RecogniseGesture();
+            appState.ToggleState(gesture);
         }
+
+
 
         points.Clear();
         ink.enabled = false;
@@ -83,7 +92,7 @@ public class DrawInk : MonoBehaviour {
     }
 
 
-    void RecogniseGesture() 
+    string RecogniseGesture() 
     {
 
         BuildPointsArray();
@@ -96,5 +105,6 @@ public class DrawInk : MonoBehaviour {
         if (debugText) {
             debugText.text = resultString;
         }
+        return gestureResult.Score > 0.8 ? gestureResult.GestureClass : "";
     }
 }
