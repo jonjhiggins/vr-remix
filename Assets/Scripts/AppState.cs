@@ -51,9 +51,9 @@ public class AppState : MonoBehaviour {
     // @TODO replace with broadcasting an event
     void StateChanged()
     {
-        triangleAudioTrack.volume = triangle ? 1 : 0;
-        squareAudioTrack.volume = square ? 1 : 0;
-        circleAudioTrack.volume = circle ? 1 : 0;
+        //triangleAudioTrack.volume = triangle ? 1 : 0;
+        //squareAudioTrack.volume = square ? 1 : 0;
+        //circleAudioTrack.volume = circle ? 1 : 0;
 
         triangleImage.color = triangle ? activeColour : inactiveColour;
         squareImage.color = square ? activeColour : inactiveColour;
