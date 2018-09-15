@@ -94,10 +94,6 @@
     <Compile Include="Assets\VRTK\Source\Editor\VRTK_SDKSetupEditor.cs" />
     <Compile Include="Assets\VRTK\Source\Editor\VRTK_SupportInfoWindow.cs" />
     <Compile Include="Assets\VRTK\Source\Editor\VRTK_UpdatePrompt.cs" />
-    <Compile Include="Assets\watson\Scripts\Editor\IBMCloudSignup.cs" />
-    <Compile Include="Assets\watson\Scripts\Editor\WatsonMenu.cs" />
-    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Aot\Editor\fsAotConfigurationEditor.cs" />
-    <Compile Include="Assets\watson\ThirdParty\FullSerializer\Editor\AotHelpers.cs" />
     <None Include="Assets\Oculus\VR\Editor\AndroidManifest.OVRSubmission.xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jonhiggins/Sites/vr-remix/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -356,9 +352,6 @@
     </Reference>
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>/Users/jonhiggins/Sites/vr-remix/Assets/watson/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/jonhiggins/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
