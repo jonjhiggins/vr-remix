@@ -5013,6 +5013,9 @@ MonoBehaviour:
   triangleImage: {fileID: 1325195838}
   squareImage: {fileID: 1326152518}
   circleImage: {fileID: 699806860}
+  triangleAnimator: {fileID: 1325195840}
+  squareAnimator: {fileID: 1326152520}
+  circleAnimator: {fileID: 699806862}
 --- !u!4 &1800649840
 Transform:
   m_ObjectHideFlags: 0
