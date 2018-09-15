@@ -2031,6 +2031,7 @@ GameObject:
   - component: {fileID: 699806859}
   - component: {fileID: 699806861}
   - component: {fileID: 699806860}
+  - component: {fileID: 699806862}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -2090,6 +2091,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699806858}
   m_CullTransparentMesh: 0
+--- !u!95 &699806862
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699806858}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d0912d789b6f485f9f705308216247f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &705518238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,6 +3739,7 @@ GameObject:
   - component: {fileID: 1325195837}
   - component: {fileID: 1325195839}
   - component: {fileID: 1325195838}
+  - component: {fileID: 1325195840}
   m_Layer: 5
   m_Name: Triangle
   m_TagString: Untagged
@@ -3779,6 +3799,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1325195836}
   m_CullTransparentMesh: 0
+--- !u!95 &1325195840
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325195836}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d0912d789b6f485f9f705308216247f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1326152516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3789,6 +3827,7 @@ GameObject:
   - component: {fileID: 1326152517}
   - component: {fileID: 1326152519}
   - component: {fileID: 1326152518}
+  - component: {fileID: 1326152520}
   m_Layer: 5
   m_Name: Square
   m_TagString: Untagged
@@ -3848,6 +3887,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1326152516}
   m_CullTransparentMesh: 0
+--- !u!95 &1326152520
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326152516}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d0912d789b6f485f9f705308216247f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1332026876
 GameObject:
   m_ObjectHideFlags: 0
