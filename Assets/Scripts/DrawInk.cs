@@ -87,7 +87,6 @@ public class DrawInk : MonoBehaviour {
         string fileName = String.Format("{0}/{1}-{2}.xml", Application.persistentDataPath, newGestureName, DateTime.Now.ToFileTime());
 
         GestureIO.WriteGesture(points.ToArray(), newGestureName, fileName);
-        Debug.Log(fileName);
         trainingSet.Add(new Gesture(points.ToArray(), newGestureName));
     }
 
@@ -101,7 +100,6 @@ public class DrawInk : MonoBehaviour {
         Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
 
         string resultString = gestureResult.GestureClass + " " + gestureResult.Score;
-        Debug.Log(resultString);
         if (debugText) {
             debugText.text = resultString;
         }
