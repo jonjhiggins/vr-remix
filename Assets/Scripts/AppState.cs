@@ -30,6 +30,10 @@ public class AppState : MonoBehaviour
     public Material squareParticle;
     public Material circleParticle;
 
+    public AudioClip triangleConfirmAudio;
+    public AudioClip squareConfirmAudio;
+    public AudioClip circleConfirmAudio;
+
     public ParticleSystem inkExplode;
 
     Color inactiveColour = new Color(255, 255, 255, 0.5f);
@@ -114,22 +118,25 @@ public class AppState : MonoBehaviour
     }
 
     void ConfirmGesture(string shape)
-    {
-        confirmGestureAudio.Play();
+    { 
+        // Set particle texture to shape detected
         Renderer renderer = inkExplode.GetComponent<Renderer>();
-
         switch (shape)
         {
             case "triangle":
                 renderer.material = triangleParticle;
+                confirmGestureAudio.clip = triangleConfirmAudio;
                 break;
             case "square":
                 renderer.material = squareParticle;
+                confirmGestureAudio.clip = squareConfirmAudio;
                 break;
             case "circle":
                 renderer.material = circleParticle;
+                confirmGestureAudio.clip = circleConfirmAudio;
                 break;
         }
+        confirmGestureAudio.Play();
         inkExplode.Play();
     }
 
