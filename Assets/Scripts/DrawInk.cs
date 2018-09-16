@@ -95,6 +95,10 @@ public class DrawInk : MonoBehaviour {
     {
 
         BuildPointsArray();
+        // User hasn't drawn enough points with inkTrail
+        if (points.Count < 10) {
+            return "";
+        } 
         // Create PDollar gesture and classify against existing gestures
         Gesture candidate = new Gesture(points.ToArray());
         Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());

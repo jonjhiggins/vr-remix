@@ -16,6 +16,8 @@ public class AppState : MonoBehaviour
     public AudioSource squareAudioTrack;
     public AudioSource circleAudioTrack;
 
+    public AudioSource confirmGesture;
+
     public Image triangleImage;
     public Image squareImage;
     public Image circleImage;
@@ -23,6 +25,8 @@ public class AppState : MonoBehaviour
     public Animator triangleAnimator;
     public Animator squareAnimator;
     public Animator circleAnimator;
+
+    public ParticleSystem inkExplode;
 
     Color inactiveColour = new Color(255, 255, 255, 0.5f);
     Color activeColour = new Color(255, 255, 255, 1);
@@ -36,6 +40,7 @@ public class AppState : MonoBehaviour
 
     public void ToggleState(string shape)
     {
+        bool stateHasChanged = true;
         // Set state
         // @TODO use a dictionary instead?
         switch (shape)
@@ -49,16 +54,22 @@ public class AppState : MonoBehaviour
             case "circle":
                 circle = !circle;
                 break;
+            default:
+                stateHasChanged = false;
+                break;
         }
         // Output debug text
         debugText.text = "triangle " + triangle + " | square " + square + " | circle " + circle;
-        StateChanged();
+        if (stateHasChanged)
+        {
+            StateChanged(shape);
+        }
     }
 
     private void Start()
     {
         PlayAudio();
-        StateChanged();
+        StateChanged("");
     }
 
     void PlayAudio()
@@ -70,8 +81,11 @@ public class AppState : MonoBehaviour
     }
 
     // @TODO replace with broadcasting an event
-    void StateChanged()
+    void StateChanged(string shape)
     {
+        // Has the user turned on a track via gesture?
+        bool gestureOn = (shape == "triangle" && triangle || shape == "square" && square || shape == "circle" && circle);
+
         triangleAnimatorStateInfo = triangleAnimator.GetCurrentAnimatorStateInfo(0);
         circleAnimatorStateInfo = circleAnimator.GetCurrentAnimatorStateInfo(0);
         squareAnimatorStateInfo = squareAnimator.GetCurrentAnimatorStateInfo(0);
@@ -87,6 +101,18 @@ public class AppState : MonoBehaviour
         triangleAnimator.SetBool("active", triangle);
         squareAnimator.SetBool("active", square);
         circleAnimator.SetBool("active", circle);
+
+        if (gestureOn)
+        {
+            ConfirmGesture();
+        }
+
+    }
+
+    void ConfirmGesture()
+    {
+        confirmGesture.Play();
+        inkExplode.Play();
     }
 
     void Update()
