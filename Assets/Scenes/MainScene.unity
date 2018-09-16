@@ -9834,8 +9834,8 @@ MonoBehaviour:
   circleParticle: {fileID: 2100000, guid: b96e722a720804160a208d6f9b3c3e26, type: 2}
   triangleConfirmAudio: {fileID: 8300000, guid: d98b1e1e815504bf7810e1a6892d3411,
     type: 3}
-  squareConfirmAudio: {fileID: 8300000, guid: 6322081db61c04de0bbeb30d38519056, type: 3}
-  circleConfirmAudio: {fileID: 8300000, guid: b99f732f9dc0d44cc821bdbf34545965, type: 3}
+  squareConfirmAudio: {fileID: 8300000, guid: b99f732f9dc0d44cc821bdbf34545965, type: 3}
+  circleConfirmAudio: {fileID: 8300000, guid: 6322081db61c04de0bbeb30d38519056, type: 3}
   inkExplode: {fileID: 1491619048}
 --- !u!4 &1800649840
 Transform:
