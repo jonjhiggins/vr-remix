@@ -16,7 +16,7 @@ public class AppState : MonoBehaviour
     public AudioSource squareAudioTrack;
     public AudioSource circleAudioTrack;
 
-    public AudioSource confirmGesture;
+    public AudioSource confirmGestureAudio;
 
     public Image triangleImage;
     public Image squareImage;
@@ -25,6 +25,10 @@ public class AppState : MonoBehaviour
     public Animator triangleAnimator;
     public Animator squareAnimator;
     public Animator circleAnimator;
+
+    public Material triangleParticle;
+    public Material squareParticle;
+    public Material circleParticle;
 
     public ParticleSystem inkExplode;
 
@@ -84,7 +88,7 @@ public class AppState : MonoBehaviour
     void StateChanged(string shape)
     {
         // Has the user turned on a track via gesture?
-        bool gestureOn = (shape == "triangle" && triangle || shape == "square" && square || shape == "circle" && circle);
+        // bool gestureOn = (shape == "triangle" && triangle || shape == "square" && square || shape == "circle" && circle);
 
         triangleAnimatorStateInfo = triangleAnimator.GetCurrentAnimatorStateInfo(0);
         circleAnimatorStateInfo = circleAnimator.GetCurrentAnimatorStateInfo(0);
@@ -102,16 +106,30 @@ public class AppState : MonoBehaviour
         squareAnimator.SetBool("active", square);
         circleAnimator.SetBool("active", circle);
 
-        if (gestureOn)
+        if (shape != "")
         {
-            ConfirmGesture();
+            ConfirmGesture(shape);
         }
 
     }
 
-    void ConfirmGesture()
+    void ConfirmGesture(string shape)
     {
-        confirmGesture.Play();
+        confirmGestureAudio.Play();
+        Renderer renderer = inkExplode.GetComponent<Renderer>();
+
+        switch (shape)
+        {
+            case "triangle":
+                renderer.material = triangleParticle;
+                break;
+            case "square":
+                renderer.material = squareParticle;
+                break;
+            case "circle":
+                renderer.material = circleParticle;
+                break;
+        }
         inkExplode.Play();
     }
 
