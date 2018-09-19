@@ -45,7 +45,9 @@ public class DrawInk : MonoBehaviour {
     public void InkOn () 
     {
         ink.Clear();
+        ink.time = 999999999;
         ink.enabled = true;
+        ink.emitting = true;
     }
 
     public void InkOff ()
@@ -62,7 +64,9 @@ public class DrawInk : MonoBehaviour {
 
 
         points.Clear();
-        ink.enabled = false;
+        // ink.enabled = false;
+        ink.emitting = false;
+        ink.time = 1;
         ink.Clear();
 
     }
