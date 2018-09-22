@@ -39,6 +39,8 @@ public class AppState : MonoBehaviour
     public ParticleSystem starfield;
     public ParticleSystem warpfield;
 
+    public TrailRenderer trianglefield;
+
     Color inactiveColour = new Color(255, 255, 255, 0.5f);
     Color activeColour = new Color(255, 255, 255, 1);
 
@@ -127,6 +129,7 @@ public class AppState : MonoBehaviour
         switch (shape)
         {
             case "triangle":
+                trianglefield.enabled = triangle;
                 break;
             case "square":
                 if (square)
