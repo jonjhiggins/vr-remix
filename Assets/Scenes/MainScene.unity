@@ -4398,7 +4398,7 @@ GameObject:
   - component: {fileID: 1401456464}
   - component: {fileID: 1401456463}
   m_Layer: 0
-  m_Name: Star field
+  m_Name: Starfield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4473,7 +4473,7 @@ ParticleSystem:
   stopAction: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -14477,6 +14477,7 @@ MonoBehaviour:
   squareConfirmAudio: {fileID: 8300000, guid: b99f732f9dc0d44cc821bdbf34545965, type: 3}
   circleConfirmAudio: {fileID: 8300000, guid: 6322081db61c04de0bbeb30d38519056, type: 3}
   inkExplode: {fileID: 1491619048}
+  starfield: {fileID: 1401456464}
 --- !u!4 &1800649840
 Transform:
   m_ObjectHideFlags: 0

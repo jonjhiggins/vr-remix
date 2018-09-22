@@ -36,6 +36,8 @@ public class AppState : MonoBehaviour
 
     public ParticleSystem inkExplode;
 
+    public ParticleSystem starfield;
+
     Color inactiveColour = new Color(255, 255, 255, 0.5f);
     Color activeColour = new Color(255, 255, 255, 1);
 
@@ -110,6 +112,8 @@ public class AppState : MonoBehaviour
         squareAnimator.SetBool("active", square);
         circleAnimator.SetBool("active", circle);
 
+        PlayVisualisations(shape);
+
         if (shape != "")
         {
             ConfirmGesture(shape);
@@ -117,8 +121,28 @@ public class AppState : MonoBehaviour
 
     }
 
+    void PlayVisualisations(string shape)
+    {
+        switch (shape)
+        {
+            case "triangle":
+                break;
+            case "square":
+                break;
+            case "circle":
+                if (circle) {
+                    starfield.Play();
+                } else {
+                    starfield.Stop();
+                }
+                
+                break;
+        }
+
+    }
+
     void ConfirmGesture(string shape)
-    { 
+    {
         // Set particle texture to shape detected
         Renderer renderer = inkExplode.GetComponent<Renderer>();
         switch (shape)
@@ -145,6 +169,8 @@ public class AppState : MonoBehaviour
         oldDeltaDSP = deltaDSP;
         deltaDSP = AudioSettings.dspTime - startTick;
 
+        DebugKeyboardListener();
+
         // Change time for currently played state
         if (triangle)
         {
@@ -163,5 +189,27 @@ public class AppState : MonoBehaviour
 
 
 
+    }
+
+    /* Keyboard keypresses to toggle shape state when in Unity
+    1 = circle
+    2 = triangle
+    3 = square
+     */
+    void DebugKeyboardListener()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            ToggleState("circle");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ToggleState("triangle");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ToggleState("square");
+        }
+        
     }
 }
