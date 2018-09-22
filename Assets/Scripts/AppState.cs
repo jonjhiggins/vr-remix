@@ -18,13 +18,13 @@ public class AppState : MonoBehaviour
 
     public AudioSource confirmGestureAudio;
 
-    public Image triangleImage;
-    public Image squareImage;
-    public Image circleImage;
+    public Image[] triangleImages;
+    public Image[] squareImages;
+    public Image[] circleImages;
 
-    public Animator triangleAnimator;
-    public Animator squareAnimator;
-    public Animator circleAnimator;
+    public Animator[] triangleAnimators;
+    public Animator[] squareAnimators;
+    public Animator[] circleAnimators;
 
     public Material triangleParticle;
     public Material squareParticle;
@@ -99,21 +99,50 @@ public class AppState : MonoBehaviour
         // Has the user turned on a track via gesture?
         // bool gestureOn = (shape == "triangle" && triangle || shape == "square" && square || shape == "circle" && circle);
 
-        triangleAnimatorStateInfo = triangleAnimator.GetCurrentAnimatorStateInfo(0);
-        circleAnimatorStateInfo = circleAnimator.GetCurrentAnimatorStateInfo(0);
-        squareAnimatorStateInfo = squareAnimator.GetCurrentAnimatorStateInfo(0);
+        triangleAnimatorStateInfo = triangleAnimators[0].GetCurrentAnimatorStateInfo(0);
+        circleAnimatorStateInfo = circleAnimators[0].GetCurrentAnimatorStateInfo(0);
+        squareAnimatorStateInfo = squareAnimators[0].GetCurrentAnimatorStateInfo(0);
 
         triangleAudioTrack.volume = triangle ? 1 : 0;
         squareAudioTrack.volume = square ? 1 : 0;
         circleAudioTrack.volume = circle ? 1 : 0;
 
-        triangleImage.color = triangle ? activeColour : inactiveColour;
-        squareImage.color = square ? activeColour : inactiveColour;
-        circleImage.color = circle ? activeColour : inactiveColour;
 
-        triangleAnimator.SetBool("active", triangle);
-        squareAnimator.SetBool("active", square);
-        circleAnimator.SetBool("active", circle);
+        foreach (Image triangleImage in triangleImages)
+        {
+            triangleImage.color = triangle ? activeColour : inactiveColour;
+        }
+
+        foreach (Image squareImage in squareImages)
+        {
+            squareImage.color = square ? activeColour : inactiveColour;
+        }
+
+        foreach (Image circleImage in circleImages)
+        {
+            circleImage.color = circle ? activeColour : inactiveColour;
+        }
+
+        foreach (Animator triangleAnimator in triangleAnimators)
+        {
+            triangleAnimator.SetBool("active", triangle);
+        }
+
+        foreach (Animator squareAnimator in squareAnimators)
+        {
+            squareAnimator.SetBool("active", square);
+        }
+
+        foreach (Animator circleAnimator in circleAnimators)
+        {
+            circleAnimator.SetBool("active", circle);
+        }
+
+
+
+        
+        
+        
 
         PlayVisualisations(shape);
 
@@ -186,20 +215,19 @@ public class AppState : MonoBehaviour
 
         DebugKeyboardListener();
 
-        // Change time for currently played state
-        if (triangle)
+        foreach (Animator triangleAnimator in triangleAnimators)
         {
             triangleAnimator.PlayInFixedTime(0, 0, (float)(deltaDSP));
         }
 
-        if (triangle)
-        {
-            circleAnimator.PlayInFixedTime(0, 0, (float)(deltaDSP));
-        }
-
-        if (square)
+        foreach (Animator squareAnimator in squareAnimators)
         {
             squareAnimator.PlayInFixedTime(0, 0, (float)(deltaDSP));
+        }
+
+        foreach (Animator circleAnimator in circleAnimators)
+        {
+            circleAnimator.PlayInFixedTime(0, 0, (float)(deltaDSP));
         }
 
 
