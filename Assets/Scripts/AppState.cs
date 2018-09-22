@@ -37,6 +37,7 @@ public class AppState : MonoBehaviour
     public ParticleSystem inkExplode;
 
     public ParticleSystem starfield;
+    public ParticleSystem warpfield;
 
     Color inactiveColour = new Color(255, 255, 255, 0.5f);
     Color activeColour = new Color(255, 255, 255, 1);
@@ -128,14 +129,25 @@ public class AppState : MonoBehaviour
             case "triangle":
                 break;
             case "square":
+                if (square)
+                {
+                    warpfield.Play();
+                }
+                else
+                {
+                    warpfield.Stop();
+                }
                 break;
             case "circle":
-                if (circle) {
+                if (circle)
+                {
                     starfield.Play();
-                } else {
+                }
+                else
+                {
                     starfield.Stop();
                 }
-                
+
                 break;
         }
 
@@ -210,6 +222,6 @@ public class AppState : MonoBehaviour
         {
             ToggleState("square");
         }
-        
+
     }
 }
